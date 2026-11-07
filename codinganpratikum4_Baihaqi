@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int A = 3, B = 6, C = 2, K = 5, L = 4, M = 3;
+
+    cout << "PROGRAM EVALUASI EKSPRESI RELASI & LOGIKA\n";
+    cout << "=========================================\n";
+    cout << "Variabel: A=3, B=6, C=2, K=5, L=4, M=3\n\n";
+
+    cout << "a. 4 + 2 > A && B - 2 > 3 + 2 || B + 2 <= 6 + 2\n";
+    cout << "   Hasil : " << (4 + 2 > A && B - 2 > 3 + 2 || B + 2 <= 6 + 2) << "\n\n";
+
+    cout << "b. K + 5 < M || (C * M < L && 2 * M - L > 0)\n";
+    cout << "   Hasil : " << (K + 5 < M || (C * M < L && 2 * M - L > 0)) << "\n\n";
+
+    cout << "c. L + 5 < M || C * K < L && 2 * K - L > 0\n";
+    cout << "   Hasil : " << (L + 5 < M || C * K < L && 2 * K - L > 0) << "\n\n";
+
+    cout << "d. A * 4 <= 3 * M + B\n";
+    cout << "   Hasil : " << (A * 4 <= 3 * M + B) << "\n\n";
+
+    cout << "e. K + 10 > A && L - 2 > 4 * C\n";
+    cout << "   Hasil : " << (K + 10 > A && L - 2 > 4 * C) << endl;
+
+    return 0;
+}
