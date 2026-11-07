@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string nama, hadiah;
+    float n1, n2, n3, rata;
+
+    cout << "PROGRAM HADIAH PERTANDINGAN SISWA\n";
+    cout << "=================================\n";
+    cout << "Nama Siswa           : ";
+    getline(cin, nama);
+    cout << "Nilai Pertandingan I : ";
+    cin >> n1;
+    cout << "Nilai Pertandingan II: ";
+    cin >> n2;
+    cout << "Nilai Pertandingan III: ";
+    cin >> n3;
+
+    // Rumus rata-rata
+    rata = (n1 + n2 + n3) / 3;
+
+    // Percabangan (If-Else) untuk hadiah
+    if (rata >= 85) {
+        hadiah = "Seperangkat mobil";
+    } 
+    else if (rata >= 70) {
+        hadiah = "Uang Rp500.000";
+    } 
+    else {
+        hadiah = "Hadiah hiburan";
+    }
+
+    cout << "\n---------------------------------\n";
+    cout << "Siswa yang bernama " << nama << "\n";
+    cout << "memperoleh nilai rata-rata " << rata << " dari hasil\n";
+    cout << "perlombaan yang diikutinya.\n";
+    cout << "Hadiah yang didapat adalah " << hadiah << endl;
+
+    return 0;
+}
